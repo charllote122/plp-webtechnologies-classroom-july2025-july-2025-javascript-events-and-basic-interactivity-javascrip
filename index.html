@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Interactive Web Page with JavaScript</h1>
+
+    <!-- Part 1: Event Handling Example -->
+    <button id="messageBtn">Click Me</button>
+    <p id="messageOutput"></p>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+        <h2>Light/Dark Mode</h2>
+        <button id="themeToggle">Toggle Theme</button>
+    </section>
+
+    <section>
+        <h2>Counter Game</h2>
+        <button id="counterBtn">Increase Count</button>
+        <p>Count: <span id="countValue">0</span></p>
+    </section>
+
+    <section>
+        <h2>FAQ Section</h2>
+        <div class="faq">
+            <h3 class="faq-question">What is JavaScript?</h3>
+            <p class="faq-answer">JavaScript is a programming language used to add interactivity to web pages.</p>
+        </div>
+        <div class="faq">
+            <h3 class="faq-question">What is DOM?</h3>
+            <p class="faq-answer">The DOM is the Document Object Model, representing the page structure.</p>
+        </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+        <h2>Sign Up Form</h2>
+        <form id="signupForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error" id="nameError"></small><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <small class="error" id="emailError"></small><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <small class="error" id="passwordError"></small><br>
+
+            <button type="submit">Submit</button>
+            <p id="formSuccess"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
